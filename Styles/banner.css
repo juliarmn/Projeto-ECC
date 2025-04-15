@@ -1,0 +1,61 @@
+.main__banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 4em 2em;
+    gap: 4em;
+}
+
+.main__banner__imagem {
+    width: 18.75rem;
+}
+
+.main__banner__container__titulo {
+    font-family: var(--fonte-titulo), sans-serif;
+    font-size: 2rem;
+    color: var(--vermelho);
+}
+
+.main__banner__container__texto {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 3em 0;
+}
+
+.main__banner__container__span{
+    color: var(--vermelho);
+}
+
+.main__banner__container__botao{
+    text-decoration: none;
+    color: var(--cor-fundo);
+    padding: 1em 2em;
+    background-color: var(--vermelho);
+    border-radius: 3em;
+}
+
+@media screen and (min-width: 1200px) {
+    .main__banner {
+        flex-direction: row;
+        justify-content: center;
+        gap: 6em;
+        margin: 8em 8em 6em 8em;
+    }
+
+    .main__banner__imagem {
+        width: 45.6875rem;
+    }
+
+    .main__banner__container__titulo {
+        font-size: 2.5rem;
+    }
+
+    .main__banner__container__texto {
+        font-size: 2rem;
+    }
+
+    .main__banner__container__botao {
+        font-size: 24px;
+    }
+}

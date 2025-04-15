@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('./header.css');
+@import url('./banner.css');
+@import url('./footer.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #E8E5DB;
+    --preto: #020202;
+    --vermelho: #CF3F34;
+    --fonte-principal: "Montserrat";
+    --fonte-titulo:  "Krona One";
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal), sans-serif;
+}
+
+main {
+    flex: 1;
+}

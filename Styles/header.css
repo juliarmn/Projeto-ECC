@@ -1,0 +1,87 @@
+.header {
+    height: 4.9375rem;
+    width: 100%;
+}
+
+#header__checkbox {
+    display: none;
+}
+
+.header__checkbox__label__imagem {
+    margin: 1em;
+    display: inline-block;
+    background-image: url('../img/menu-burguer.svg');
+    background-size: 2.9375rem 2.9375rem;
+    width: 2.9375rem;
+    height: 2.9375rem;
+}
+
+.header__logo {
+    display: none;
+}
+
+.header__lista {
+    top: 0;
+    position: absolute;
+    display: none;
+    list-style: none;
+}
+
+#header__checkbox:checked ~ .header__lista {
+    display: block;
+    background-color: white;
+    width: 50%;
+    padding: 2.5em;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.05);
+}
+
+.header__lista__item_link {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.header__lista__item {
+    margin: 1em 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#header__checkbox:checked + label .header__checkbox__label__imagem {
+    position: absolute;
+    z-index: 999;
+    left: 8em;
+    top: .2em;
+    background-image: url('../img/close.svg');
+    background-size: 1.6875rem 1.6875rem;
+    width: 1.6875rem;
+    height: 1.6875rem;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .header__checkbox__label {
+        display: none;
+    }
+
+    .header__logo {
+        display: block;
+        width: 2.6rem;
+        height: 2.6rem;
+        position: absolute;
+        top: 1.8em;
+        left: 6em;
+    }
+
+    .header__lista {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        width: 100%;
+        gap: 6em;
+    }
+
+    .header__lista__item {
+        margin-top: 2%;
+    }
+}

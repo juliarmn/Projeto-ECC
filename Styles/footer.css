@@ -1,0 +1,14 @@
+footer {
+    background-color: var(--vermelho);
+    padding: .8em;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1200px) {
+    footer {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+}
